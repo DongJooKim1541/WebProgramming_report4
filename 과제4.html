@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js">
+		</script>
+		<style>
+			#square{
+				width: 100px;
+				height: 100px;
+				background-color:#aaaaff;
+			}
+		</style>
+		<script>
+			$(document).ready(function(){
+				$("#right").click(function(){
+					$("#square").animate({left: '+=100px'});
+				});
+				$("#left").click(function(){
+					$("#square").animate({left: '-=100px'});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button id="left"><<</button>
+		<button id ="right">>></button>
+		<div id="square" style="position: relative"/>
+		</div>
+	</body>
+</html>
